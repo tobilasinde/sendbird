@@ -1,0 +1,98 @@
+/**
+  Layout styles
+*/
+.sendbird-support-chat {
+  display: flex;
+  height: 100vh;
+}
+.sendbird-support-chat__channel {
+  width: 100%;
+}
+
+/**
+  Custom channel list header styles
+*/
+.sb-channel-list-header {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px 24px;
+}
+.sb-channel-list-header__header {
+  font-family: var(--sendbird-font-family-default);
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0px;
+  text-align: left;
+}
+.sb-channel-list-header__button {
+  cursor: pointer;
+  /* Button/Button 1 */
+  font-family: var(--sendbird-font-family-default);
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.88);
+  background: none;
+  border: solid 1px var(--sendbird-light-background-300);
+  border-radius: 4px;
+  padding: 2px 12px;
+}
+.sb-channel-list-header__button:hover {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 1px 8px;
+}
+.sb-channel-list-header__button:disabled {
+  cursor: not-allowed;
+  box-shadow: none !important;
+}
+.sb-channel-list-header__hidden_img {
+  display: none;
+}
+
+/**
+  disable the actions in channel-preview
+*/
+.sendbird-channel-preview .sendbird-channel-preview__action {
+  display: none !important;
+}
+.sendbird-channel-preview:hover .sendbird-channel-preview__content__upper__last-message-at {
+  display: inline-block !important;
+}
+
+/*
+  disable the delete message action
+*/
+.sendbird-message-item-menu__list__menu-item.menu-item-delete {
+  display: none;
+}
+.sendbird-fileviewer__header__right__actions__delete {
+  display: none;
+}
+.sendbird-msg-hoc:has(.sendbird-thumbnail-message-item-body) .sendbird-context-menu {
+  display: none !important;
+}
+.sendbird-msg-hoc:has(.sendbird-file-message-item-body) .sendbird-context-menu {
+  display: none !important;
+}
+
+/*
+  disable the leave channel action
+*/
+.sendbird-channel-settings__leave-channel {
+  display: none;
+}
+
+/**
+  Channel settings disable edit button
+*/
+.sendbird-channel-profile__edit {
+  display: none;
+}
+
+/**
+  Channel settings disable invite button
+*/
+.sendbird-channel-settings-member-list .sendbird-channel-settings-accordion__footer {
+  display: none;
+}
